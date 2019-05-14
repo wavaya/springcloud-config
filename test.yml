@@ -1,0 +1,19 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.wayhua.xyz:8761/eureka,http://www.wayhua.xyz:18761/eureka
+
+spring:
+  application:
+    name: config
+ 
+
+server:
+  port: 8030
+
+# 允许/actuator/bus-refresh接口被外部调用
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
