@@ -5,15 +5,12 @@ eureka:
 
 spring:
   application:
-    name: config
+    name: test
  
 
 server:
-  port: 8030
+  port: 8130
 
-# 允许/actuator/bus-refresh接口被外部调用
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+girl:
+  name: danny
+  age: 28
